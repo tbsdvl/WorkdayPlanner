@@ -9,7 +9,7 @@ I open the planner
 
     CSS
     .lead class
-    
+
     Moment.js 
     Format time to current day
         moment().format("MMM Do YY"); 
@@ -18,22 +18,64 @@ I scroll down
     and I am presented with timeblocks for standard business hours
 
     HTML
+    <ul>?
+        <li>?
+            <textarea>?
 
     CSS
     .container Bootstrap class
     .time-block class
+        style list elements as blocks with formatted business hours (8 a.m. to 5 p.m.) time text.
+        Allow user to manipulate text inside the box 
 
+    moment.js
+    convert text to standard business hours
+    function stdBusHrs ();
+    var timeBlock = $("timeblock");
 
-
+    for(i = 0; i > timeBlock.parent.length(); i++){
+        if(i < 4){
+            timeBlock.text(i + ":00 A.M.");
+        }else if(i => 4){
+            timeblock.text(i + ":00 P.M.");
+        }else{
+            null;
+        };
+    };
+};
 
 I view the timeblocks for that day
     and each timeblock is color coded to indicate whether it is in the past, present, or future
 
+    moment.js
+    Compare hourly times with current time
+    moment().format('LT');
+    if(current time is before a later hour)
+        make the timeblock color of the later hours green
+    else if(current time is after an earlier hour)
+        make the timeblock color of the earlier hours red
+    else if(current time is during the same hour)
+        make the timeblock color for the current time grey
+
+
 I click into a timeblock
     and I can enter an event
+
+    HTML
+    textarea
+    textareas need to save text via .value
 
 I click the save button for that timeblock
     the text for that event is saved in local storage
 
+    js
+    localStorage();
+    localStorage.getId("of hour id);
+    store text area .value
+
 I refresh the page
-    andthe saved events persist
+    and the saved events persist
+
+    js
+    preventDefault();
+    handleFormSubmit();
