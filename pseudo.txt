@@ -1,0 +1,39 @@
+I am using a daily planner to create a schedule
+
+I open the planner
+    and the current day is displayed at the top of the calendar
+
+    HTML
+    <div code...>
+    <time code...>
+
+    CSS
+    .lead class
+    
+    Moment.js 
+    Format time to current day
+        moment().format("MMM Do YY"); 
+
+I scroll down
+    and I am presented with timeblocks for standard business hours
+
+    HTML
+
+    CSS
+    .container Bootstrap class
+    .time-block class
+
+
+
+
+I view the timeblocks for that day
+    and each timeblock is color coded to indicate whether it is in the past, present, or future
+
+I click into a timeblock
+    and I can enter an event
+
+I click the save button for that timeblock
+    the text for that event is saved in local storage
+
+I refresh the page
+    andthe saved events persist
