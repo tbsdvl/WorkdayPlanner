@@ -50,6 +50,8 @@ I view the timeblocks for that day
     moment.js
     Compare hourly times with current time
     moment().format('LT');
+    Need to convert hours to moment objects
+    Time maths comparing the current time and different times
     if(current time is before a later hour)
         make the timeblock color of the later hours green
     else if(current time is after an earlier hour)
