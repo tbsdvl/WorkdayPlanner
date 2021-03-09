@@ -72,7 +72,7 @@ I click the save button for that timeblock
 
     js
     localStorage();
-    localStorage.getId("of hour id);
+    localStorage.getId("of hour id");
     store text area .value
 
 I refresh the page
